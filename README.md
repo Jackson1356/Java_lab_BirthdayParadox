@@ -75,36 +75,63 @@ with the value of i iterating from 0 to largest.
 Here are some execution examples:
 
 Experiment #1
+
 Enter the no. of people: 23
+
 Enter the no. of repetitions: 100
+
 Experiment 1
+
 Probability Of Hits: 0.440
+
 Experiment #2
-Enter the no. of people again: 600
+
+Enter the no. of people again: 600\
+
 Experiment 2
+
 0 hits: 61
-2
+
 1 hits: 132
+
 2 hits: 89
+
 3 hits: 54
+
 4 hits: 21
+
 5 hits: 6
+
 6 hits: 1
+
 7 hits: 0
+
 8 hits: 1
 
 Experiment #1
+
 Enter the no. of people: 35
+
 Enter the no. of repetitions: 100
+
 Experiment 1
+
 Probability Of Hits: 0.830
+
 Experiment #2
+
 Enter the no. of people again: 365
+
 Experiment 2
+
 0 hits: 134
+
 1 hits: 136
+
 2 hits: 67
+
 3 hits: 19
+
 4 hits: 7
+
 5 hits: 2
-3
