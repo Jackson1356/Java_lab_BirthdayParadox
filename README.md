@@ -7,8 +7,9 @@ This observation comes from the following analysis. Assume that there are 365 da
 and the birthdays of people are evenly distributed on the 365 possible dates. In other words, for
 each day of a year, the expected proportion of the people born on that day is 1/365 of the entire
 population. Under these assumptions, the probability that randomly selected 23 people have 23
-distinct birthdays collectively is:
+distinct birthdays collectively is:/n
 365*364*...*343/365^23
+/n
 The denominator represents the number of possible choices for the birthdays collectively given to
 the 23 people. The numerator represents the number of possibilities for the 23 people to select
 their birthdays so that no two people choose the same birthdays. There, the first person has 365
