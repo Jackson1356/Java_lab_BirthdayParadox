@@ -3,13 +3,15 @@
 The goal of this lab is to write a class, Birthday, for conducting experiments to test the
 “Birthday Paradox,” which states that if 23 people gather, the chances are 50-50 that there are
 two people in the group having the same birthdays.
+
 This observation comes from the following analysis. Assume that there are 365 days in a year
 and the birthdays of people are evenly distributed on the 365 possible dates. In other words, for
 each day of a year, the expected proportion of the people born on that day is 1/365 of the entire
 population. Under these assumptions, the probability that randomly selected 23 people have 23
-distinct birthdays collectively is:/n
+distinct birthdays collectively is:
+
 365*364*...*343/365^23
-/n
+
 The denominator represents the number of possible choices for the birthdays collectively given to
 the 23 people. The numerator represents the number of possibilities for the 23 people to select
 their birthdays so that no two people choose the same birthdays. There, the first person has 365
@@ -17,6 +19,7 @@ possibilities, the second has 364 because she must not pick the one that the fir
 the third person has 363 because she must not pick the ones that the first and the second persons
 have chosen, and so on. The fraction has the value approximately equal to 0.50, so the chances are
 almost 50-50 that there are two people having the same birthdays.
+
 First Experiment:
 The centerpiece of the code is a method, oneTrial, that, given a number of people as its parameter,
 randomly selects birthdays for those people and produces for each day how many people
@@ -33,9 +36,9 @@ multiple people having the same birthdays. We write a method, hasAHit, for execu
 The method receives an int array as its parameter and returns a boolean. Using a for-loop,
 the method scans the elements of the array given as the formal parameter. On encountering an
 element whose value is greater than or equal to 2, the method immediately returns true, ignoring
-1
 the remaining elements of the array. If this does not happen, the loop terminates. At that point,
 the method returns false.
+
 Using the above two methods, we write another method, experiment1. This method has two
 formal parameters. The first is an int named nPeople. This is the value to be passed to oneTrial
 as the number of people. The second is an int as well and is named nReps. This is the number
@@ -45,10 +48,13 @@ value of a double variable, hitRate, by 1. The initial value of hitRate is 0. Af
 the loop, we divide hitRate by nReps. The value of hitRate then becomes the proportion of the
 repetitions in which the random birthday selections generated multiple people having the same
 birthdays. The method experiment1 reports this ratio before terminating.
+
 The main method receives the quantities for nPeople and nReps and calls experiment1 with
 these two values as the actual parameters.
+
 To print the average, use "%.3f" in printf so that exactly three digits appear after the decimal
 point.
+
 Second Experiment:
 Given the return value of oneTrial, we want to count the birthdays with no people, exactly one
 person, exactly two people, and more than two people. Write a method, summarize, that receives
@@ -62,6 +68,7 @@ has been found, the method instantiates an int array values with largest + 1 ele
 it scans the array again. The element it encounters during the scan is between 0 and largest and
 so can be thought of as a position in the array values. The method increases the element at the
 position.
+
 After the inventory has been taken, the method reports the result:
 System.out.printf( "\%d Hits: \%d\n", i, values[ i ] );
 with the value of i iterating from 0 to largest.
